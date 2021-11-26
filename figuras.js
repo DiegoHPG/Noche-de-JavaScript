@@ -70,3 +70,25 @@ function calcularAreaCuadrado() {
   const area = areaCuadrado(value);
   alert(area);
 }
+
+
+function perimetroTriangulo(lado1, lado2, base) {
+  return lado1 + lado2 + base;
+}
+
+
+function calcularAlturatriangulo(){
+const lado=document.getElementById("Inputlado1");
+
+const base=document.getElementById("Inputbase");
+
+const l1=lado.value;
+const b1=base.value;
+
+const altura=  Math.sqrt((Math.pow(l1,2))-((Math.pow(b1,2))/4));;
+
+alert(altura.toFixed(2));
+
+
+
+}
